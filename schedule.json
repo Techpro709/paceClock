@@ -1,0 +1,44 @@
+{
+    "sunday": [],
+    "monday": [
+        { "name": "Quran", "startTime": "08:30" },
+        { "name": "Algebra CC", "startTime": "10:00" },
+        { "name": "Algebra Work", "startTime": "11:00" },
+        { "name": "Lunch", "startTime": "12:40" },
+        { "name": "Salah", "startTime": "13:30" },
+        { "name": "Dismissal", "startTime": "14:45" }
+    ],
+    "tuesday": [
+        { "name": "Quran", "startTime": "08:30" },
+        { "name": "Algebra CC", "startTime": "10:00" },
+        { "name": "Algebra Work", "startTime": "11:00" },
+        { "name": "Lunch", "startTime": "12:40" },
+        { "name": "Salah", "startTime": "13:30" },
+        { "name": "Dismissal", "startTime": "14:45" }
+    ],
+    "wednesday": [
+        { "name": "Quran", "startTime": "08:30" },
+        { "name": "Algebra CC", "startTime": "10:00" },
+        { "name": "Algebra Work", "startTime": "11:00" },
+        { "name": "Lunch", "startTime": "12:40" },
+        { "name": "Salah", "startTime": "13:30" },
+        { "name": "Dismissal", "startTime": "14:45" }
+    ],
+    "thursday": [
+        { "name": "Quran", "startTime": "08:30" },
+        { "name": "Algebra CC", "startTime": "10:00" },
+        { "name": "Algebra Work", "startTime": "11:00" },
+        { "name": "Lunch", "startTime": "12:40" },
+        { "name": "Salah", "startTime": "13:30" },
+        { "name": "Dismissal", "startTime": "14:45" }
+    ],
+    "friday": [
+        { "name": "Quran", "startTime": "08:30" },
+        { "name": "Algebra CC", "startTime": "10:00" },
+        { "name": "Algebra Work", "startTime": "11:00" },
+        { "name": "Lunch", "startTime": "12:40" },
+        { "name": "Salah", "startTime": "13:30" },
+        { "name": "Dismissal", "startTime": "14:45" }
+    ],
+    "saturday": []
+}

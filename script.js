@@ -1,65 +1,38 @@
-// Define schedules for each day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
-const schedules = [
-    [], // Sunday
-    [ // Monday
-        { name: "Quran", startTime: "08:30" },
-        { name: "Algebra CC", startTime: "10:00" },
-        { name: "Algebra Work", startTime: "11:00" },
-        { name: "Lunch", startTime: "12:40" },
-        { name: "Salah", startTime: "13:30" },
-        { name: "Dismissal", startTime: "14:45" }
-    ],
-    [ // Tuesday (Same as Monday)
-        { name: "Period 1", startTime: "08:00" },
-        { name: "Period 2", startTime: "09:30" },
-        { name: "Period 3", startTime: "11:00" },
-        { name: "Lunch", startTime: "12:30" },
-        { name: "Period 4", startTime: "13:30" },
-        { name: "Period 5", startTime: "15:00" }
-    ],
-    [ // Wednesday (Same as Monday)
-        { name: "Period 1", startTime: "08:00" },
-        { name: "Period 2", startTime: "09:30" },
-        { name: "Period 3", startTime: "11:00" },
-        { name: "Lunch", startTime: "12:30" },
-        { name: "Period 4", startTime: "13:30" },
-        { name: "Period 5", startTime: "15:00" }
-    ],
-    [ // Thursday (Same as Monday)
-        { name: "Period 1", startTime: "08:00" },
-        { name: "Period 2", startTime: "09:30" },
-        { name: "Period 3", startTime: "11:00" },
-        { name: "Lunch", startTime: "12:30" },
-        { name: "Period 4", startTime: "13:30" },
-        { name: "Period 5", startTime: "15:00" }
-    ],
-    [ // Friday (Same as Monday)
-        { name: "Period 1", startTime: "08:00" },
-        { name: "Period 2", startTime: "09:30" },
-        { name: "Period 3", startTime: "11:00" },
-        { name: "Lunch", startTime: "12:30" },
-        { name: "Period 4", startTime: "13:30" },
-        { name: "Period 5", startTime: "15:00" }
-    ],
-    []
-];
+function fetchSchedule() {
+    return fetch('https://proton.hackclub.com/paceClock/schedule.json') // Replace with the actual URL of your JSON file
+        .then(response => response.json())
+        .then(data => {
+            return data;
+        })
+        .catch(error => {
+            console.error('Error fetching schedule:', error);
+            return null;
+        });
+}
 
-function updateClock() {
+async function updateClock() {
     const currentDate = new Date();
-    const currentDay = currentDate.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+    const currentDay = currentDate.toLocaleLowerCase().split(' ')[0]; // Convert current day to lowercase
     const currentTime = currentDate.getTime(); // Current time in milliseconds
 
+    const scheduleData = await fetchSchedule();
+
+    if (!scheduleData) {
+        // Handle the case where the schedule data couldn't be fetched
+        document.getElementById("current-time").textContent = "Error fetching schedule data";
+        return;
+    }
+
+    const currentSchedule = scheduleData[currentDay];
+
     // Check if it's a weekend (Saturday or Sunday)
-    if (currentDay === 0 || currentDay === 6) {
+    if (!currentSchedule || currentSchedule.length === 0) {
         // Display "No school" on weekends
         document.getElementById("current-time").textContent = "It's the weekend!";
         document.getElementById("current-period").textContent = "No school today";
         document.getElementById("next-period").textContent = "";
         document.getElementById("countdown").textContent = "";
     } else {
-        // Get the schedule for the current day
-        const currentSchedule = schedules[currentDay];
-
         // Find the current period
         let currentPeriod = null;
         for (const period of currentSchedule) {
