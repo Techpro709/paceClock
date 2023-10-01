@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -6,15 +10,17 @@ body {
 
 .container {
     background-color: #fff;
-    padding: 20px;
+    padding: 100px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     margin: 0 auto;
 }
 
-h1 {
+.h1 {
     color: #333;
+    font-size: 55;
+    font-weight:bolder;
 }
 
 .time, .countdown {
@@ -23,5 +29,36 @@ h1 {
 
 p {
     margin: 5px;
-    font-size: 18px;
+    font-size: 50px;
 }
+
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+.container {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+/* Define the animation */
+@keyframes slideGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  /* Apply the animation to the .container class */
+  .container {
+    background: linear-gradient(45deg, #ff5733, #00b8a9, #cbb4d4, #ff5733, #00b8a9, #cbb4d4, #ff5733, #00b8a9, #cbb4d4);
+    background-size: 600% 100%; /* Adjust the size for a longer gradient */
+    animation: slideGradient 60s linear infinite alternate; /* Adjust the duration as needed */
+  }
+  
+  
