@@ -12,7 +12,10 @@ function fetchSchedule() {
 
 async function updateClock() {
     const currentDate = new Date();
-    const currentDay = currentDate.toLocaleLowerCase().split(' ')[0]; // Convert current day to lowercase
+    const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const d = new Date();
+    let day = weekday[d.getDay()];
+    const currentDay = day.toLowerCase(); // Convert current day to lowercase
     const currentTime = currentDate.getTime(); // Current time in milliseconds
 
     const scheduleData = await fetchSchedule();
