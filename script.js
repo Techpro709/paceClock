@@ -50,7 +50,7 @@ function updateClock() {
     const currentTime = currentDate.getTime(); // Current time in milliseconds
 
     // Check if it's a weekend (Saturday or Sunday)
-    if (currentDay === 0 || currentDay === 0) {
+    if (currentDay === 0 || currentDay === 6) {
         // Display "No school" on weekends
         document.getElementById("current-time").textContent = "It's the weekend!";
         document.getElementById("current-period").textContent = "No school today";
