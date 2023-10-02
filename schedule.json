@@ -22,7 +22,7 @@
         { "name": "History CC", "startTime": "11:00" },
         { "name": "Lunch", "startTime": "11:40" },
         { "name": "Chemistry Work", "startTime": "12:00" },
-        { "name": "Recess", "startTime": "12:30" }
+        { "name": "Recess", "startTime": "12:30" },
         { "name": "Chemistry Work", "startTime": "13:00" },
         { "name": "Salah", "startTime": "13:20" },
         { "name": "History", "startTime": "13:40" },
@@ -50,7 +50,7 @@
         { "name": "History CC", "startTime": "11:00" },
         { "name": "Lunch", "startTime": "11:40" },
         { "name": "Chemistry Work", "startTime": "12:00" },
-        { "name": "Recess", "startTime": "12:30" }
+        { "name": "Recess", "startTime": "12:30" },
         { "name": "Chemistry Work", "startTime": "13:00" },
         { "name": "Salah", "startTime": "13:20" },
         { "name": "History", "startTime": "13:40" },
