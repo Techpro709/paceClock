@@ -2,35 +2,59 @@
     "sunday": [],
     "monday": [
         { "name": "Quran", "startTime": "08:30" },
-        { "name": "Algebra CC", "startTime": "10:00" },
+        { "name": "Brightwheel", "startTime": "10:00" },
+        { "name": "Algebra CC", "startTime": "10:15" },
+        { "name": "5 mins", "startTime": "10:55" },
         { "name": "Algebra Work", "startTime": "11:00" },
-        { "name": "Lunch", "startTime": "12:40" },
-        { "name": "Salah", "startTime": "13:30" },
-        { "name": "Dismissal", "startTime": "14:45" }
+        { "name": "Lunch", "startTime": "11:40" },
+        { "name": "Algebra Work", "startTime": "12:00" },
+        { "name": "Recess", "startTime": "12:30" },
+        { "name": "English Work", "startTime": "13:00" },
+        { "name": "Salah", "startTime": "13:20" },
+        { "name": "English Work", "startTime": "13:40" },
+        { "name": "Dismissal", "startTime": "14:40" }
     ],
     "tuesday": [
         { "name": "Quran", "startTime": "08:30" },
-        { "name": "Algebra CC", "startTime": "10:00" },
-        { "name": "Algebra Work", "startTime": "11:00" },
-        { "name": "Lunch", "startTime": "12:40" },
-        { "name": "Salah", "startTime": "13:30" },
-        { "name": "Dismissal", "startTime": "14:45" }
+        { "name": "Brightwheel", "startTime": "10:00" },
+        { "name": "Chemistry CC", "startTime": "10:15" },
+        { "name": "5 mins", "startTime": "10:55" },
+        { "name": "History CC", "startTime": "11:00" },
+        { "name": "Lunch", "startTime": "11:40" },
+        { "name": "Chemistry Work", "startTime": "12:00" },
+        { "name": "Recess", "startTime": "12:30" }
+        { "name": "Chemistry Work", "startTime": "13:00" },
+        { "name": "Salah", "startTime": "13:20" },
+        { "name": "History", "startTime": "13:40" },
+        { "name": "Dismissal", "startTime": "14:40" }
     ],
     "wednesday": [
         { "name": "Quran", "startTime": "08:30" },
-        { "name": "Algebra CC", "startTime": "10:00" },
+        { "name": "Brightwheel", "startTime": "10:00" },
+        { "name": "Algebra CC", "startTime": "10:15" },
+        { "name": "5 mins", "startTime": "10:55" },
         { "name": "Algebra Work", "startTime": "11:00" },
-        { "name": "Lunch", "startTime": "12:40" },
-        { "name": "Salah", "startTime": "13:30" },
-        { "name": "Dismissal", "startTime": "14:45" }
+        { "name": "Lunch", "startTime": "11:40" },
+        { "name": "Algebra Work", "startTime": "12:00" },
+        { "name": "Recess", "startTime": "12:30" },
+        { "name": "English Work", "startTime": "13:00" },
+        { "name": "Salah", "startTime": "13:20" },
+        { "name": "English Work", "startTime": "13:40" },
+        { "name": "Dismissal", "startTime": "14:40" }
     ],
     "thursday": [
         { "name": "Quran", "startTime": "08:30" },
-        { "name": "Algebra CC", "startTime": "10:00" },
-        { "name": "Algebra Work", "startTime": "11:00" },
-        { "name": "Lunch", "startTime": "12:40" },
-        { "name": "Salah", "startTime": "13:30" },
-        { "name": "Dismissal", "startTime": "14:45" }
+        { "name": "Brightwheel", "startTime": "10:00" },
+        { "name": "Chemistry CC", "startTime": "10:15" },
+        { "name": "5 mins", "startTime": "10:55" },
+        { "name": "History CC", "startTime": "11:00" },
+        { "name": "Lunch", "startTime": "11:40" },
+        { "name": "Chemistry Work", "startTime": "12:00" },
+        { "name": "Recess", "startTime": "12:30" }
+        { "name": "Chemistry Work", "startTime": "13:00" },
+        { "name": "Salah", "startTime": "13:20" },
+        { "name": "History", "startTime": "13:40" },
+        { "name": "Dismissal", "startTime": "14:40" }
     ],
     "friday": [
         { "name": "Quran", "startTime": "08:30" },
